@@ -1,0 +1,63 @@
+.basket-item{
+    width: 100%;
+    height: 340px;
+    background-color: #00000050;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding:5px;
+    transition: 0.25s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow-x:hidden;
+    
+}
+.basket-item:hover{
+    transform: rotate3D(0,1,0, 20deg);
+    background-color: #222222;
+}
+.basket-item:hover>.item-info{
+    transform: rotate3D(0,1,0, -360deg) ;
+}
+.basket-item:hover>img{
+    transform:translateZ(20px); ;
+    box-shadow: 0 30px 30px rgba(255, 255, 255, 0.462);   
+}
+.basket-item:hover>button{
+    transform: translateZ(30px) translateY(-20px);
+}
+.basket-item img{
+    width: 150px;
+    transition: 0.25s;
+    height: 150px;
+    border-radius: 15px;
+}
+.item-information{
+    width: 100%;
+    color:white;
+    font-weight: 600;
+    padding:10px;
+}
+.item-info{
+    width:250px;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.basket-item button{
+    width: 80%;
+    height: 40px;
+    border:none;
+    box-shadow: 0 0 20px #222;
+    color:white;
+    background-color:#624728;
+    transition: 0.25s;
+}
+.basket-item button:hover{
+    background-color: #222;
+}

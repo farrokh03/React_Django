@@ -1,0 +1,39 @@
+.box-title{
+    color:white;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px; 
+}
+.notif{
+    width: 95%;
+    margin-right: 5%;
+    height: 250px;
+    border-radius: 15px;
+    backdrop-filter:blur(30px);
+    background-color: #ffffff67;
+    color:white;
+    font-size: 17px;
+    padding: 20px;
+    text-decoration:wavy;
+    line-height: 40px;
+    transition: .25s;
+}
+.title{
+    font-size: 25px;
+   
+}
+.notification-content{
+    margin-top: 20px;
+    text-align: start;
+  
+}
+.notification{
+    transition: 0.25s;
+}
+.notif:hover{
+
+    transform:rotate3D(0,1,0, -20deg);
+    background-color: #222;
+}

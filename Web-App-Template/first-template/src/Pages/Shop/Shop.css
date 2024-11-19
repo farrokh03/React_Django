@@ -1,0 +1,8 @@
+.shoplist{
+    position: fixed;
+    left: 80px;
+    right: 80px;
+    top:90px;
+    height: 50px;
+    background-color: aqua;
+}

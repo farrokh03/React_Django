@@ -1,0 +1,134 @@
+@keyframes translate{
+    from{
+        top:100vh;
+    }
+    to{
+        top: 90px;
+    }
+}
+@keyframes reversetranslate{
+    from{
+        top:90px;
+    }
+    to{
+        top:100vh;
+    }
+}
+.boxitems{
+    width:25%;
+    position:absolute;
+    inset:50px 0  0 0;
+    list-style: none;
+    padding: 20px;
+    margin: 5px 10px 5px 0;
+    background-color:#1f1e1e;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(40, 40, 40),0px 0px 20px rgb(40, 40, 40);
+    backdrop-filter:blur(30px);
+
+
+}
+.boxitems li{
+    width: 100%;
+    height:7%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 20px;
+    font-weight: 600;
+    text-align: center;    
+    font-size:18px;
+    border-radius: 15px;
+    margin: 10px 0;
+    transition: 0.25s;
+}
+.profile-section{
+    width: 100%;
+    height:300px;
+    background-color:#222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+}
+.profile-photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap:10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #222;
+}
+.head{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #898989;
+    margin-top: 20px;
+}
+.body{
+    width: 100px;
+    height: 70px;
+    background-color: #898989;
+    border-radius: 40px 40px 0 0;
+}
+.username{
+    color:#ffffff;
+    padding: 10px;
+    font-weight: 600;
+}
+.boxitems li:hover{
+    background-color: #ffffff67;
+}
+.boxitems li > span {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    display: inline-block; 
+}
+.boxitems li:hover > span {
+    animation-play-state: running;
+}
+@keyframes jump {
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+.boxitems li > span {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+    display: inline-block; 
+}
+
+.boxitems li:hover > span {
+    animation-play-state: running;
+}
+
+@keyframes jump {
+    33.33% {
+        transform: rotate(10deg);
+    }
+    66.66% {
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform:rotate(10deg);
+    }
+}
+.boxitems li >span{
+    animation-play-state: paused;
+}

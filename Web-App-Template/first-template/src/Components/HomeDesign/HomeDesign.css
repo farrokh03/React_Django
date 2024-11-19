@@ -1,0 +1,8 @@
+.HomeDesigninformationbox{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    background-color:#222;
+}

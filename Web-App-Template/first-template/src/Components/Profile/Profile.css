@@ -1,0 +1,17 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+    max-width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}

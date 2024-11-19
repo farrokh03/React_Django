@@ -1,0 +1,22 @@
+.link{
+    width:80%;
+    height: 50px;
+    background-color:rgba(0,0,0,0.1);
+    color:white;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 5px #222, 0 0 10px #222 , 0 0 15px #222 , 0 0 20px #222 , 0 0 30px rgb(0, 0, 0);
+    transition: 0.25s;
+    z-index:1;
+    cursor: pointer;
+}
+.link:hover{
+    background-color:rgba(0,0,0,.8);
+    color:#f2f2f2;
+}

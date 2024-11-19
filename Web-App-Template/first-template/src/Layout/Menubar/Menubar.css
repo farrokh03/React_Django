@@ -1,0 +1,67 @@
+.verticalmenu{
+    box-shadow: 0px 0px 10px rgb(40, 40, 40),0px 0px 20px rgb(40, 40, 40);
+    backdrop-filter:blur(30px);
+    background-color:rgba(0,0,0,0.4);
+    position:fixed;
+    inset: 100vh 80px 0 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items:center;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    z-index: 1;
+}
+.Content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    gap:5px;
+    width: 75%;
+    position:absolute;
+    right: 0;
+    top:50px;
+    bottom: 0;
+}
+.box-title{
+    color:white;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px; 
+}
+.notification,.basket,.wishlist{
+    width: 33%;
+    height:100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 15px;
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    scroll-behavior: smooth;
+    align-content: flex-start;
+    overflow-y: auto;   
+    overflow-x: hidden;     
+        
+}
+.notification::-webkit-scrollbar,.basket::-webkit-scrollbar,.wishlist::-webkit-scrollbar{
+    width: 5px;
+    margin-right: -10px;
+}
+.notification::-webkit-scrollbar-track,.wishlist::-webkit-scrollbar-track,.basket::-webkit-scrollbar-track{
+    border-radius: 15px;
+    margin: 50px;
+    background-color: #222;
+    padding: 3px;
+    box-shadow: inset 0px 0px 3px rgb(85, 85, 85);
+}
+.notification::-webkit-scrollbar-thumb,.wishlist::-webkit-scrollbar-thumb,.basket::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom , rgb(153, 153, 153) ,white,rgb(153,153,153));
+    border-radius: 15px;
+    box-shadow: 0 0 10px #757272;
+}

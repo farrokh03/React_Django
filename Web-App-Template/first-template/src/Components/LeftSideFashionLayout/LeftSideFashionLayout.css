@@ -1,0 +1,35 @@
+.leftsidebox {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap:3px;
+    flex-wrap: wrap;
+    padding:0px 0px 5px 5px;
+}
+.sidetextbox{
+    width: 40%;
+    height:60%;
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 30px rgb(100, 100, 100);
+    border-radius: 15px;
+}
+.leftsidebox div{
+    background-color: #bbb;
+}
+.sidetextbox2{
+    width: 40%;
+    height:39%;
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 30px rgb(100, 100, 100);
+    border-radius: 15px;
+}
+.sidetextbox3{
+    width: 60%;
+    height:33%;
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 30px rgb(100, 100, 100);
+    border-radius: 15px;
+}

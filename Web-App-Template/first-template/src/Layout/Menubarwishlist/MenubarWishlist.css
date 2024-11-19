@@ -1,0 +1,48 @@
+
+.wishlist-item{
+    width: 100%;
+    height: 175px;
+    background-color: #48484867;
+    border-radius:15px;
+    display: flex;
+    padding:10px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+    transition: 0.25s;
+}
+.wishlist-item:hover{
+    transform:rotate3d(0,1,0, 20deg);
+    background-color: #222222;
+}
+.item-details{
+    width: 60%;
+}
+.wishlist-item-img{
+    width: 80px;
+    border-radius: 15px;
+    height: 80px;
+}
+.item-name,.item-price{
+    color:white;
+    font-size: 16px;
+    padding: 0 0 0 20px;
+}
+.remove,.Add{
+    width: 180px;
+    height: 30px;
+    border: none;
+    margin:20px;
+    background-color:#624728;
+    color: white;
+    box-shadow:  0 0 30px black;
+    transition: .25s;
+}
+.Add{
+    width: 120px;
+}
+.Add:hover,.remove:hover{
+    background-color: #222;
+}

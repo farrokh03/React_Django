@@ -1,0 +1,29 @@
+/* MenuButton.css */
+.menu-button {
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar {
+    width: 90%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius:30%;
+}
+
+.bar.open:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
