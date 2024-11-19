@@ -15,8 +15,8 @@ import NextviewportMenu from "../../Layout/NextviewportMenu/NextviewportMenu";
 
 import { Link } from "react-router-dom";
 
-const video1 = "/fashionvideo.mp4";
-const video2 = "/HomeDesign.mp4";
+// const video1 = "/fashionvideo.mp4";
+// const video2 = "/HomeDesign.mp4";
 
 const Homepage = () => {
     const controls = useAnimation();
@@ -35,7 +35,7 @@ const Homepage = () => {
         <div className="HomePage">
             <NextviewportMenu/>
             <div className="background">
-                    <Backgroundvideo>{video1}</Backgroundvideo>
+                    {/* <Backgroundvideo>{video1}</Backgroundvideo> */}
                     <Element name="section1" className="container">
                         <div className="leftcontainer">
                             <motion.div
